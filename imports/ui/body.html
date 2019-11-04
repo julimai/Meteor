@@ -1,0 +1,26 @@
+
+<body>
+    <div class="container">
+      <header>
+        <h1>Gift List </h1>
+        <br><h2>incomplete: {{incompleteCount}}</h2>
+
+        <label class="hide-completed">
+            <input type="checkbox" />
+            Hide completed gifts
+        </label>
+        {{> loginButtons}}
+        {{#if currentUser}}
+        <form class="new-gift">
+            <input type="text" name="text" placeholder="Add new gift"/>
+        </form>
+        {{/if}}
+      </header>
+   
+      <ul>
+        {{#each gifts}}
+          {{> gift}}
+        {{/each}}
+      </ul>
+    </div>
+  </body>
