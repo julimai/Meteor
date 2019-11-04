@@ -28,19 +28,13 @@ curl https://install.meteor.com/ | sh
  ```
 
 
-#### Go to the project folder
-```
- cd giftlist
- ```
-
-
 #### In the project folder
 ```
  meteor npm install
  ```
 
 
-#### To run the project
+#### To run the project (http://localhost:3000)
 ```
  meteor
  ```
